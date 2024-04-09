@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRE FIRE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -16,19 +19,28 @@
         body{
             display: grid;
             place-items: center;
+            background-color: #41bf9b;
+            font-family:  "Montserrat", sans-serif;
         }
         td{
             text-align: center;
+            width: calc(350px / 4);
         }
         table{
             border-collapse: collapse;
+            background-color: #54d6a6;
         }
         th, td{
-            border: solid 1px gray;
+            border: solid 1px black;
         }
         th{
             cursor: default;
             padding: 8px;
+        }
+        td{
+            font-size: large;
+            font-style: oblique;
+            font-weight: 600;
         }
         input{
             width: 68px;
@@ -37,6 +49,7 @@
             border: none;
             text-align: center;
             font-size: larger;
+            background-color: transparent;
         }
         input[type="number"] {
             -moz-appearance: textfield; /* Firefox */
@@ -49,10 +62,11 @@
         }
         .tbl{
             position: relative;
-            border: solid 1px;
-            width: 308px;
+            /* border: solid 1px; */
+            width: 320px;
             height: 330px;
             overflow: hidden;
+            top: 50px;
         }
         #tbl_1{
             position: absolute;
@@ -71,7 +85,7 @@
     </style>
 </head>
 <body>
-    <div class="tbl">
+    <div class="tbl" id="tabelas">
         <div id="tbl_1">
             <table>
                 <thead>
@@ -196,6 +210,8 @@
         function trocar_emu(){
             var tbl1 = document.getElementById('tbl_1');
             var tbl2 = document.getElementById('tbl_2');
+            // var tabelas = document.getElementById('tabelas');
+            // tabelas.classList.toggle('teste')
             tbl1.style.top = 'calc(-100% - 2px)';
             tbl2.style.top = 0;
         }
