@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    width: 460px;
+}
+
+table,
+tr,
+td,
+th {
+    border: solid 1px lightgray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    min-width: 40px;
+    text-align: center;
+}
+
+td input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: large;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#soma {
+    font-size: x-large;
+}
+
+#soma {
+    height: 35px;
+}
+
+tfoot tr td:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: large;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px gray;
+}
+header button{
+    height: 35px;
+    width: 130px;
+    background-color: rgb(226, 226, 226);
+    border: solid 1px lightgray;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 200ms;
+}
+header button:hover{
+    scale: 1.1;
+}

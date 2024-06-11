@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <button onclick="formatTable(this)">Mobile</button>
+        <button onclick="formatTable(this)">Emulador</button>
+    </header>
+    <table>
+        <tbody>
+            <tr>
+                <td>#1</td>
+                <td><input oninput="tbl1(this.value, a1.value, p1, )" type="number" id="q1" min="1" max="12"></td>
+                <td><input oninput="tbl1(q1.value, this.value, p1, )" type="number" id="a1" min="1" max="12"></td>
+                <td id="p1"></td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td><input oninput="tbl1(this.value, a2.value, p2, )" type="number" id="q2" min="1" max="12"></td>
+                <td><input oninput="tbl1(q2.value, this.value, p2, )" type="number" id="a2" min="1" max="12"></td>
+                <td id="p2"></td>
+            </tr>
+            <tr>
+                <td>#3</td>
+                <td><input oninput="tbl1(this.value, a3.value, p3, )" type="number" id="q3" min="1" max="12"></td>
+                <td><input oninput="tbl1(q3.value, this.value, p3, )" type="number" id="a3" min="1" max="12"></td>
+                <td id="p3"></td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td><input oninput="tbl1(this.value, a4.value, p4, )" type="number" id="q4" min="1" max="12"></td>
+                <td><input oninput="tbl1(q4.value, this.value, p4, )" type="number" id="a4" min="1" max="12"></td>
+                <td id="p4"></td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td><input oninput="tbl1(this.value, a5.value, p5, )" type="number" id="q5" min="1" max="12"></td>
+                <td><input oninput="tbl1(q5.value, this.value, p5, )" type="number" id="a5" min="1" max="12"></td>
+                <td id="p5"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Pontos ( <span id="tblInfo">Mobile</span> )</td>
+                <td id="soma"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
