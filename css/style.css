@@ -16,7 +16,8 @@ body {
 }
 
 table {
-    width: 400px;
+    width: 460px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 table,
@@ -89,4 +90,15 @@ header button{
 }
 header button:hover{
     scale: 1.1;
+}
+@media(max-width: 400px){
+    table{
+        max-width: 350px;
+    }
+        tfoot tr td:nth-child(1){
+        font-size: x-small;
+    }
+    tr td:last-child{
+        width: 80px;
+    }
 }
